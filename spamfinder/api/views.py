@@ -14,7 +14,7 @@ from django.db.models.functions import Lower
 from django.middleware.csrf import get_token
 from .models import Spam, Contact
 from django.db.models import Q
-
+# Signup View
 def signup_view(request):
     if request.method == 'POST':
         form = SignupForm(request.POST)
