@@ -2,7 +2,7 @@
 from django.urls import path
 from .views import login_view, logout_view , search_view,test_view, api_login_view, signup_view, add_spam_view, view_spammers_view
 from rest_framework_simplejwt import views as jwt_views
-
+# Path defined for the API views
 urlpatterns = [
     path('api/test/', test_view, name='test_view'),
 

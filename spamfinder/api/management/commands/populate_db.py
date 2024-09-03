@@ -2,7 +2,7 @@ from django.core.management.base import BaseCommand
 from api.models import User, Spam, Contact
 from faker import Faker
 import random
-# Populate the database with sample data?
+# Populate the database with sample data
 class Command(BaseCommand):
     help = 'Populate the database with sample data'
 
