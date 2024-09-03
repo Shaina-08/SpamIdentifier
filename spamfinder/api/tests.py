@@ -4,7 +4,7 @@ from django.test import Client
 from django.contrib.auth import get_user_model
 from .models import Spam
 import json
-# Testing done for all the apis and views
+# Testing done for all the apis and views using pytest
 User = get_user_model()
 
 @pytest.fixture
