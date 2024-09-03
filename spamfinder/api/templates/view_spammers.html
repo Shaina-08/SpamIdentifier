@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Spammers</title>
+    <!-- Include your CSS files here -->
+</head>
+<body>
+    <h1>Top Spammers</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Phone Number</th>
+                <th>Reported By</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for spam in spammers %}
+            <tr>
+                <td>{{ spam.phone_number }}</td>
+                <td>{{ spam.reported_by }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="2">No spammers found.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <p><a href="{% url 'add_spam' %}">Add More Spam</a></p>
+</body>
+</html>
