@@ -18,7 +18,7 @@ class UserManager(BaseUserManager):
         user.is_superuser = True
         user.save(using=self._db)
         return user
-
+# Models defined for Spam, User, and Contact
 class User(AbstractBaseUser):
     name = models.CharField(max_length=100, default='Anonymous')
     phone_number = models.CharField(max_length=15, unique=True)
